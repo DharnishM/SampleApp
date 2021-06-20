@@ -1,0 +1,27 @@
+{{!-- <Welcome>
+<h1>Book your seat to Enjoy your time</h1>
+<label for="">Type your movie Name</label>
+<Input  @value={{this.querys}} id="in"/>
+</Welcome>
+<div class="trending">
+ <Bookingfil::Filter @booking={{@booking}} @querys={{this.querys}} as |results|>
+     {{#each results as |models|}}
+        <Popmovies @popmovies={{models}} />
+    {{/each}}
+ </Bookingfil::Filter>
+ </div> --}}
+
+<div class="movies">
+        <img src="https://image.tmdb.org/t/p/original/{{@popmovies.poster_path}}" alt="">
+        <div class="size name">
+            <LinkTo @route="popmovie" @model={{@popmovies}}>
+            Name: <span>{{@popmovies.title}}</span> 
+            </LinkTo>
+        </div>
+        <div class="size rating">
+            Rating: <span>{{@popmovies.vote_average}}/10</span>
+        </div>
+        <div class="size year">
+            year: <span>{{@popmovies.release_date}}</span>
+        </div>
+</div>

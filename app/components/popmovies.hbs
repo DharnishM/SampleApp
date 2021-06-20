@@ -1,0 +1,12 @@
+<Welcome>
+<h1>Book your seat to Enjoy your time</h1>
+<label for="">Type your movie Name</label>
+<Input  @value={{this.querys}} id="in"/>
+</Welcome>
+<div class="trending">
+ <Bookingfil::Filter @booking={{@booking}} @querys={{this.querys}} as |results|>
+     {{#each results as |models|}}
+        <Popmovies @popmovies={{models}} />
+    {{/each}}
+ </Bookingfil::Filter>
+ </div>

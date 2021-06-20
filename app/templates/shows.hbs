@@ -1,0 +1,9 @@
+<Welcome>
+<h1>Today Shows</h1>
+</Welcome>
+<div class="trending">
+    {{#each @model as |screen|}}
+       <Screen @screen={{screen}}/>
+   {{/each}}
+</div>
+{{outlet}}

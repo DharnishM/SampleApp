@@ -1,0 +1,11 @@
+<Welcome>
+  <h1>Welcome All</h1>
+  <p>You all have Full entainment,when you reach us !!!!</p>
+</Welcome>
+<h1>Trending Movies</h1>
+{{! list of movies  }}
+<div class='trending'>
+  {{#each @model as |movie|}}
+    <Movies @movies={{movie}} />
+  {{/each}}
+</div>

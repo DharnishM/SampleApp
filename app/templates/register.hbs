@@ -1,0 +1,33 @@
+<Welcome>
+<h1>Book Your seat</h1>
+<p>Next few Hours,you are under our controls!!</p>
+</Welcome>
+<div class="ticket">
+    <h4>Booking Counter</h4>
+    <div class="contents">
+<label for="movie">Your Screen</label>
+<select>
+    <option value="screen1">Screen1</option>
+    <option value="screen2">Screen2</option>
+    <option value="screen3">Screen3</option>
+    <option value="screen4">Screen4</option>
+</select>
+</div>
+<div class="contents">
+<label for="person">No Of People</label>
+<input type="number" min="1" max="10" id="person" required>
+</div>
+<div class="contents">
+<label for="name">Enter your Movie Name</label>
+<input type="text" id="name">
+</div>
+<div class="contents">
+<label for="date">Select Your day</label>
+<input type="date">
+</div>
+</div>
+<div class="con">
+<button type="button" {{ on "click" this.call}} id="book">Book Now</button>
+<br>
+<p id="message"></p>
+</div>

@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-width:1000px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color:pink;
+}
+.navbar{
+    background-color: black;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+}
+.navbar .head{
+    font-size: 70px;
+    padding: 10px;
+}
+.navbar .heads{
+    display: inline-block;
+    font-size: 40px;
+    text-decoration: none;
+    color: silver;
+    padding: 20px;
+}
+.welcome{
+    text-align: center;
+    font-size: 30px;
+}
+.welcome #in{
+    margin: 15px;
+}
+.trending{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: lightblue;
+    width:auto;
+}
+
+.movies{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+    width: 205px;
+    background-color: cadetblue;
+}
+.movies img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+.movies .size{
+    line-height: 30px;
+}
+.name,.rating,.year{
+    font-weight: bold;
+}
+.size span{
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.screen{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 30px;
+    background-color: cadetblue;
+}
+.screen img{
+    width: 240px;
+    height: 380px;
+    border-radius: 5px;
+}
+
+.book{
+    background-color: rgb(142, 142, 241);
+    border-radius: 5px;
+    font-size: 30px;
+    border: 2px solid black;
+    margin: 0 auto;
+    width: auto;
+    color: black;
+}
+.specs li{
+    list-style: none;
+    height: 50px;
+}
+.avail{
+    height: 500px;
+}
+@media screen and (max-width:1200px){
+    .trending{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+.ticket{
+
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.ticket .contents{
+    margin: 30px 0;
+
+}
+.ticket input,.ticket select{
+    float: right;
+    height: 30px;
+    font-size:20px;
+}
+.ticket button{
+    margin: 0 auto;
+}
+input:focus{
+    background-color: cadetblue;
+}
+.con{
+    text-align: center;
+    margin: 10px;
+    height: 300px;
+}
+.con #book{
+    background-color: seagreen;
+    font-size: 30px;
+    border: 1px solid greenyellow;
+    border-radius: 10px;
+}
+.con #message{
+    font-size: 20px;
+}
+.con #btn1{
+    background-color: red;
+    font-size: 20px;
+    margin-top: 20px;
+}
