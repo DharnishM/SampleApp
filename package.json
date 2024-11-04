@@ -66,5 +66,5 @@
   "ember": {
     "edition": "octane"
   },
-  "main": "index.js"
+  "packageManager": "yarn@1.22.9"
 }
