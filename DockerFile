@@ -1,0 +1,19 @@
+# Use the official Node.js image as the base image
+FROM node:20 AS build
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the package.json and package-lock.json
+COPY package.json package-lock.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the Ember.js application files
+COPY . .
+
+# Build the Ember.js app for production
+RUN ember build --environment=production
+
+# The build artifacts will be in the /app/dist folder
